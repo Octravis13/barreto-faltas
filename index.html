@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barreto - Faltas</title>
+    <link rel="icon" type="image/webp" href="barreto.webp">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <img src="barreto.webp" alt="logo">
+        <h1 id="titulo">Barreto - Todas as filiais</h1>
+        <select id="filial">
+            <option value="todas">Todas as filiais</option>
+            <option value="piche">Auto Center</option>
+            <option value="truck">Truck</option>
+        </select>
+    </div>
+
+    <div class="formulario">
+        <input
+            type="text"
+            id="nomeFiltro"
+            placeholder="Digite o filtro em falta"
+        >
+        <select id="marca">
+            <option value="">Selecione a marca do filtro</option>
+            <option value="wega">Wega</option>
+            <option value="mann">Mann</option>
+            <option value="tecfil">Tecfil</option>
+            <option value="acdelco">ACDelco</option>
+            <option value="parker">Parker</option>
+            <option value="mahle">Mahle</option>
+            <option value="outro">Outro</option>
+        </select>
+        <div id="tipo">
+            <label>
+                <input type="radio" name="tipo" value="carro">
+                Carro
+            </label>
+            <label>
+                <input type="radio" name="tipo" value="caminhão">
+                Caminhão
+            </label>
+        </div>
+        <select id="nivel">
+            <option value="">Nível</option>
+            <option value="possui">Possui de outras marcas</option>
+            <option value="pouco">Pouco</option>
+            <option value="urgente">Urgente</option>
+        </select>
+        <button id="confirmar">Adicionar</button>
+        <button id="cancelar">Cancelar</button>
+    </div>
+
+    <div class="pesquisa">
+        <div class="modo-pesquisa">
+            <button id="modoNome" class="modo ativo" type="button">
+                Pesquisar por nome
+            </button>
+            <button id="modoGrupo" class="modo" type="button">
+                Pesquisar por grupos
+            </button>
+        </div>
+
+        <div id="pesquisaNome" class="area-pesquisa">
+            <input
+                type="text"
+                id="filtroPesquisa"
+                placeholder="Digite o código do filtro"
+            >
+        </div>
+
+        <div id="pesquisaGrupo" class="area-pesquisa oculto">
+            <select id="marcaPesquisa">
+                <option value="">Todas as marcas</option>
+                <option value="wega">Wega</option>
+                <option value="mann">Mann</option>
+                <option value="tecfil">Tecfil</option>
+                <option value="acdelco">ACDelco</option>
+                <option value="parker">Parker</option>
+                <option value="mahle">Mahle</option>
+                <option value="outro">Outro</option>
+            </select>
+            <select id="tipoPesquisa">
+                <option value="">Todos os tipos</option>
+                <option value="carro">Carro</option>
+                <option value="caminhão">Caminhão</option>
+            </select>
+            <select id="nivelPesquisa">
+                <option value="">Todos os níveis</option>
+                <option value="possui">Possui de outras marcas</option>
+                <option value="pouco">Pouco</option>
+                <option value="urgente">Urgente</option>
+            </select>
+        </div>
+        <button id="limparPesquisa" type="button">
+            Limpar pesquisa
+        </button>
+        <button id="exportarPDF" type="button">
+            Exportar PDF
+        </button>
+    </div>
+
+    <div class="tabela-container">
+        <table id="tabelaFaltas">
+            <thead>
+                <tr>
+                    <th>Filtro</th>
+                    <th>Marca</th>
+                    <th>Tipo</th>
+                    <th>Nível</th>
+                    <th>Filiais</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

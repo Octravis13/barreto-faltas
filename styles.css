@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+}
+
+.cabecalho {
+    background-color: rgb(145, 17, 17);
+    border-bottom: 5px solid white;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cabecalho h1 {
+    margin-top: 0;
+    padding-top: 20px;
+    color: white;
+}
+
+.cabecalho img{
+    margin-top: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.cabecalho select{
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+#filial {
+    margin-left: auto;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px;
+    margin: 20px;
+
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.formulario > input {
+    width: 350px;
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario select {
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#tipo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#tipo label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#tipo input[type="radio"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#confirmar {
+    background-color: green;
+    color: white;
+}
+
+#cancelar {
+    background-color: red;
+    color: white;
+}
+
+.formulario button:hover {
+    opacity: 0.8;
+}
+
+.tabela-container {
+    margin: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(145, 17, 17);
+    color: white;
+
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.editar {
+    background-color: #e6a700;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 8px 12px;
+    margin-right: 5px;
+
+    cursor: pointer;
+}
+
+.excluir {
+    background-color: #c62828;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 8px 12px;
+
+    cursor: pointer;
+}
+
+.editar:hover,
+.excluir:hover {
+    opacity: 0.8;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px 20px;
+    margin: 20px;
+
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.modo-pesquisa {
+    display: flex;
+    gap: 5px;
+}
+
+.modo {
+    padding: 10px 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.modo.ativo {
+    background-color: rgb(145, 17, 17);
+    color: white;
+}
+
+.area-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.area-pesquisa input,
+.area-pesquisa select {
+    padding: 10px;
+
+    font-size: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.oculto {
+    display: none;
+}
+
+#limparPesquisa {
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #555;
+    color: white;
+
+    cursor: pointer;
+}
+
+#limparPesquisa:hover {
+    opacity: 0.8;
+}
+
+#tipo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#tipo label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+#tipo input[type="radio"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.urgente-ambas {
+    background-color: #ffd6d6;
+    font-weight: bold;
+}
+
+.urgente-ambas:hover {
+    background-color: #ffc4c4;
+}
+
+#exportarPDF {
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgb(145, 17, 17);
+    color: white;
+
+    cursor: pointer;
+}
+
+#exportarPDF:hover {
+    opacity: 0.8;
+}
